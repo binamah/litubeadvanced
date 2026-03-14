@@ -93,7 +93,7 @@ public final class MainActivity extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(mainView, (v, insets) -> {
             final Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             // FIX: Set bottom padding to 0 to ensure the Nav Bar sticks to the bottom edge
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, 0);
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
