@@ -59,6 +59,8 @@ public class GalleryActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		EdgeToEdge.enable(this);
 		setContentView(R.layout.activity_gallery);
+
+        setRequestedOrientation(android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content), (v, insets) -> {
 			Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
 			v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

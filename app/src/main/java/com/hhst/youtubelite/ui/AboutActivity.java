@@ -68,6 +68,8 @@ public class AboutActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		EdgeToEdge.enable(this);
 		setContentView(R.layout.activity_about);
+
+        setRequestedOrientation(android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		View mainView = findViewById(id.content);
 		ViewCompat.setOnApplyWindowInsetsListener(mainView, (v, insets) -> {
 			Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

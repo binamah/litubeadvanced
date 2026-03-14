@@ -2,9 +2,9 @@
 
 
 #export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
-#rm app/build -fr
+rm app/build -fr
 export JAVA_HOME=/usr/local/sdkman/candidates/java/21.0.2-open
 export ANDROID_HOME=$HOME/android
-./gradlew assembleDebug -DskipFormatKtlint 
-#./gradlew assembleRelease -DskipFormatKtlint  --parallel 
+#./gradlew assembleDebug -DskipFormatKtlint 
+./gradlew assembleRelease -DskipFormatKtlint  --parallel 
 exit 0

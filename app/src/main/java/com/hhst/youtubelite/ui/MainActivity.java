@@ -87,7 +87,7 @@ public final class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         super.onCreate(savedInstanceState);
 
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         final View mainView = findViewById(R.id.main);
         ViewCompat.setOnApplyWindowInsetsListener(mainView, (v, insets) -> {
