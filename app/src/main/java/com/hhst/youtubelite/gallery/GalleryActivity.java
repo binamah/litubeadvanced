@@ -20,6 +20,8 @@ import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.graphics.Color;
+
 import com.hhst.youtubelite.R;
 import com.hhst.youtubelite.downloader.service.DownloadService;
 
@@ -62,6 +64,9 @@ public class GalleryActivity extends AppCompatActivity {
 			v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 			return insets;
 		});
+
+        // Always set navigation bar to black
+        getWindow().setNavigationBarColor(Color.BLACK);
 
 		viewPager = findViewById(R.id.viewPager);
 

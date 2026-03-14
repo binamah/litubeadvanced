@@ -25,6 +25,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import android.graphics.Color;
+
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
@@ -72,6 +74,9 @@ public class AboutActivity extends AppCompatActivity {
 			v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 			return insets;
 		});
+
+        // Always set navigation bar to black
+        getWindow().setNavigationBarColor(Color.BLACK);
 
 		ImageView iconView = findViewById(R.id.app_icon);
 		TextView nameView = findViewById(R.id.app_name);

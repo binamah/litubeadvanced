@@ -27,6 +27,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.media3.common.util.UnstableApi;
 
+import android.graphics.Color;
+
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.hhst.youtubelite.Constant;
 import com.hhst.youtubelite.PlaybackService;
@@ -94,6 +96,9 @@ public final class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, 0);
             return insets;
         });
+
+        // Always set navigation bar to black
+        getWindow().setNavigationBarColor(Color.BLACK);
 
         setupNativeContextMenu();
         requestPermissions();
