@@ -25,14 +25,6 @@ android {
             abiFilters.addAll(listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64"))
         }
     }
-    splits {
-        abi {
-            reset()
-            enable true
-            universalApk false // If true, also generate a universal APK
-            include "arm64-v8a"
-        }
-    }
     buildTypes {
         release {
             isMinifyEnabled = true
